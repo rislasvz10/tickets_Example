@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: ticket
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: password
+    jpa:
+      show-sql: true
+    platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+constants:
+  api:
+    uri:
+      basePath: /api/v1/operation
+      specificPaths:
+        ticket:
+          insert: /ticket/insert
+          get: /ticket/id
+
+  errorResolver:
+    errorCodes:
+      badRequestException: 400
+      unauthorizedException: 401
+      notFoundException: 404
+      methodNotSupportedException: 405
+      unaceptableMediaTypeException: 406
+      unsupportedMediaTypeException: 415
+      businessValidationFailed: 422
+      servletRequestBindingException: 424
+      httpMessageNotReadableException: 430
+      methodArgumentNotValidException: 431
+      constraintViolationException: 432
+      internalServerError: 500
+      hystrixRuntimeException: 532
+      databaseMsClientException: 550
+    messages:
+      unauthorizedText: Not Authorized
+      notFoundTable: The table was not found.
+      genericErrorDescription: Something went wrong! Further details may be available in logs.
+      notFoundError: "S999 003 0022 2631:SERVICIO NO DISPONIBLE POR EL MOMENTO"

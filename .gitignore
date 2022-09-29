@@ -1,0 +1,11 @@
+/target/
+/bitacora/
+.classpath
+.project
+.settings/
+.DS_Store
+.idea
+${env:DIR_LOG}/
+logs/
+/.apt_generated/
+/.apt_generated_tests/

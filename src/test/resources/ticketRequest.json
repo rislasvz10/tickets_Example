@@ -1,0 +1,12 @@
+{
+  "fechaSalida": "11/06/2021",
+  "fechaLlegada": "11/06/2021",
+  "origen": "CDMX",
+  "destino": "Tijuana",
+  "nombre": "Raul Gutierrez",
+  "edad": "32",
+  "equipaje": false,
+  "precio": "1000.00",
+  "horaSalida": "11:10",
+  "horaLlegada": "13:10"
+}
